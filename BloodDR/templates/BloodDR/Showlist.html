@@ -1,0 +1,30 @@
+{% extends 'BloodDR/basic.html' %}
+{% block title %}Blood donor list{% endblock%}
+{% block body %}
+     {% load static %}
+    <h1>LIST OF BLOOD DONOR</h1>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">S.no</th>
+      <th scope="col">Donor name</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Age</th>
+      <th scope="col">Blood Group</th>
+      <th scope="col">Location</th>
+    </tr>
+  </thead>
+    {% for datadisplay in BloodDRList %}
+  <tbody>
+    <tr>
+      <th scope="row">#</th>
+      <th>{{datadisplay.BDName}}</th>
+      <td>{{datadisplay.Sex}}</td>
+      <td>{{datadisplay.Age}}</td>
+      <td>{{datadisplay.BloodGP}}</td>
+      <td>{{datadisplay.location}}</td>
+    </tr>
+  </tbody>
+    {% endfor %}
+</table>
+{% endblock %}
