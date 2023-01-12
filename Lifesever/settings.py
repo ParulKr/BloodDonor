@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)qn^t%uh5+0o9jo$kh+k$f8q8y&u+d3!4%t&!_26+@u%r-v9zr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bollywoodmovie.azurewebsites.net']
 
 
 # Application definition
